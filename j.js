@@ -1,9 +1,10 @@
 let che;
 function namevalid(){
+    document.getElementById("name").style.textTransform="uppercase"
     let nam=document.getElementById("name").value;
     che=/^[a-z. a-z]+$/i
    let result= che.test(nam);
-   document.getElementById("name").style.textTransform="uppercase"
+   
 console.log(nam)
 if(result){
     document.getElementById("nameval").innerHTML='verified'
